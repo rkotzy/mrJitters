@@ -38,7 +38,7 @@ class DetailsController: UIViewController, MKMapViewDelegate {
     }
     
     // MARK: - Apple Maps directions
-    func getDirections() {
+    @objc func getDirections() {
         let loc = mapView.annotations.first as! CoffeePin
         print(loc.name)
         let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking]
