@@ -62,7 +62,7 @@ class HomeController: UIViewController, CLLocationManagerDelegate {
     }
     
     // Figure out where the user is
-    func getCurrentLocation() {
+    @objc func getCurrentLocation() {
         // check if access is granted
         if CLLocationManager.locationServicesEnabled() {
             switch(CLLocationManager.authorizationStatus()) {

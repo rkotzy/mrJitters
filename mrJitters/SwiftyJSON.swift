@@ -853,7 +853,7 @@ extension JSON {
             }
         }
         set {
-            self.object = newValue?.absoluteString
+            self.object = newValue?.absoluteString as Any
         }
     }
 }
